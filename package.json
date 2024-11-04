@@ -4,9 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "live-server src --entry-file=index.html",
+    "start": "live-server . --entry-file=index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d ."
   },
   "keywords": [],
   "author": "",
