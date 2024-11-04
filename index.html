@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script type="module" src="./scripts/scripts.js" defer></script>
+</head>
+<body>
+  <header class="header"></header>
+  <main class="main">
+    <div class="container container--hex-to-rgb">
+      <h2 class="container__title container__item">HEX-to-RGB Converter</h2>
+
+      <label for="#input-hex" class="input-label container__item">HEX color code (#RRGGBB)</label>
+      <input type="text" id="input-hex" class="container__item input input--hex" placeholder="000000">
+
+        <div class="container__item container__item--buttons">
+          <button type="button" id="btn-convert-hex" class="button button--convert">&#x1F504 Convert</button>
+          <button type="button" id="btn-reset-hex" class="button button--reset">Reset</button>
+        </div>
+
+        <p class="result-text container__item">Results:</p>
+
+        <label for="#rgb-r" class="input-label container__item--rgb">Red (0-255)</label>
+        <label for="#rgb-g" class="input-label container__item--rgb">Green (0-255)</label>
+        <label for="rgb-b" class="input-label container__item--rgb">Blue (0-255)</label>
+
+        <input type="#text" id="rgb-r" class="input container__item container__item--rgb" readonly disabled>
+        <input type="text" id="rgb-g" class="input container__item container__item--rgb" readonly disabled>
+        <input type="text" id="rgb-b" class="input container__item container__item--rgb" readonly disabled>
+
+        <label for="#rgb-css" class="input-label container__item">CSS color</label>
+        <input type="text" id="rgb-css" class="input input--rgb-css container__item" readonly disabled>
+
+        <label for="$rgb-preview-hex" class="input-label container__item">Color preview</label>
+        <input type="text" id="rgb-preview-hex" class="input input--color-preview container__item" readonly disabled>
+    </div>
+
+    <div class="container container--rgb-to-hex">
+      <h2 class="container__title container__item">RGB-to-HEX Converter</h2>
+
+      <div class="container-slider-wrapper">
+        <label for="set-rgb-r" class="input-label container__item">Red color (R)</label>
+        <input type="number" id="set-rgb-r" class="input container__item--rgb input--set-rgb-number" placeholder="0">
+        <input type="range" min="0" max="255" value="0" class="input container__item--range input--set-rgb-range">
+      </div>
+
+      <div class="container-slider-wrapper">
+        <label for="set-rgb-g" class="input-label container__item">Green color (G)</label>
+        <input type="number" id="set-rgb-g" class="input container__item--rgb input--set-rgb-number" placeholder="0">
+        <input type="range" min="0" max="255" value="0" class="input container__item--range input--set-rgb-range">
+      </div>
+
+      <div class="container-slider-wrapper">
+        <label for="set-rgb-b" class="input-label container__item">Blue color (B)</label>
+        <input type="number" id="set-rgb-b" class="input container__item--rgb input--set-rgb-number" placeholder="0">
+        <input type="range" min="0" max="255" value="0" class="input container__item--range input--set-rgb-range">
+      </div>
+      <input type="text" id="rgb-preview-rgb" class="input input--color-preview" readonly disabled>
+
+      <div class="container__item container__item--buttons">
+        <button type="button" id="btn-convert-rgb" class="button button--convert">&#x1F504 Convert</button>
+        <button type="button" id="btn-reset-rgb" class="button button--reset">Reset</button>
+      </div>
+
+      <p class="result-text container__item">Results:</p>
+
+      <label for="#rgb-code" class="input-label container__item">RGB code</label>
+      <input type="text" id="rgb-code" class="input input--rgb-code container__item" readonly disabled>
+
+      <label for="#hex-code" class="input-label container__item">HEX code</label>
+      <input type="text" id="hex-code" class="input input--hex-code container__item" readonly disabled>
+
+
+    </div>
+  </main>
+</body>
+</html>
