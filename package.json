@@ -1,0 +1,20 @@
+{
+  "name": "hex-rgb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "live-server src --entry-file=index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.2.0",
+    "live-server": "^1.2.2"
+  },
+  "homepage": "https://associate2coder.github.io/hex-to-rgb"
+}
